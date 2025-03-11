@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Médicos</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <h2>Cadastro de Médico</h2>
+    <form action="/cadastrar-medico" method="post">
+        <label>Nome:</label>
+        <input type="text" name="nome_medico" required><br>
+
+        <label>CPF:</label>
+        <input type="number" name="CPF_medico" required><br>
+
+        <label>Email:</label>
+        <input type="email" name="email_medico" required><br>
+
+        <label>Telefone:</label>
+        <input type="number" name="telefone_medico" required><br>
+
+        <label>Endereço:</label>
+        <input type="text" name="endereco_medico"><br>
+
+        <label>RG:</label>
+        <input type="number" name="RG_medico"><br>
+
+        <label>Data de Nascimento:</label>
+        <input type="date" name="dt_nasc_medico" required><br>
+
+        <label>Sexo:</label>
+        <select name="sexo_medico">
+            <option value="M">Masculino</option>
+            <option value="F">Feminino</option>
+            <option value="O">Outro</option>
+        </select><br>
+
+        <label>Estado Civil:</label>
+        <input type="text" name="est_civil_medico"><br>
+
+        <label>Especialidade:</label>
+        <input type="text" name="especialidade_medico" required><br>
+
+        <label>CRM:</label>
+        <input type="number" name="CRM_medico" required><br>
+
+        <button type="submit">Cadastrar</button>
+    </form>
+</body>
+</html>

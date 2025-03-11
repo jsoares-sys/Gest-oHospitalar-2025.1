@@ -1,0 +1,4 @@
+com\hospital\Medico.class
+com\hospital\DatabaseConnection.class
+com\hospital\MedicoDAO.class
+com\hospital\MedicoServlet.class

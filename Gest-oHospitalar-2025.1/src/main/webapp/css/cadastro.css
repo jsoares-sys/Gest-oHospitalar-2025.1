@@ -1,0 +1,221 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #a1c4fd;
+    --secondary-color: #c2e9fb;
+    --background-color: rgba(255, 255, 255, 0.2);
+    --button-color: #84a9ff;
+    --button-hover-color: #6b8eff;
+    --social-facebook: #407dff;
+    --social-instagram: #ff4141;
+    --social-icloud: #000000;
+    --white: #f5f5f5;
+    --black: #222222;
+}
+
+body {
+    color: var(--black);
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    margin: 0;
+}
+
+.wrapper {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    padding: 40px;
+    max-width: 900px;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.image-container {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0px 10px 10px 0px;
+    overflow: hidden;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0px 10px 10px 0px;
+}
+
+.container {
+    background: var(--background-color);
+    padding: 30px;
+    text-align: center;
+    width: 350px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 10px 0px 0px 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 24px;
+    color: var(--black);
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    text-align: left;
+    margin-top: 10px;
+    font-weight: bold;
+    color: var(--black);
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    background: rgba(255, 255, 255, 0.5);
+    color: var(--black);
+    outline: none;
+    font-size: 16px;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+}
+
+input::placeholder {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.checkbox-label {
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.lembre-me-checkbox {
+    margin-right: 10px;
+    transform: scale(1.2);
+}
+
+.lembre-me-checkbox:checked {
+    background-color: #6b8eff;
+}
+
+.forgot-password {
+    display: block;
+    margin: 10px 0;
+    color: #4776e6;
+    text-decoration: none;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background: var(--button-color);
+    color: var(--white);
+    margin-top: 15px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.3s;
+    margin-bottom: 25px;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+}
+
+button:hover {
+    background: var(--button-hover-color);
+}
+
+.social-links {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.social-links p {
+    font-size: 16px;
+    color: #4776e6;
+    margin-bottom: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+.social-links a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--white);
+    text-decoration: none;
+    background: rgba(0, 0, 0, 0.2);
+    padding: 15px;
+    transition: 0.3s;
+    font-size: 30px;
+}
+
+.social-links a:hover {
+    background: var(--white);
+    color: var(--black);
+}
+
+.social-links .facebook {
+    background-color: var(--social-facebook);
+}
+
+.social-links .instagram {
+    background-color: var(--social-instagram);
+}
+
+.social-links .icloud {
+    background-color: var(--social-icloud);
+}
+
+@media (max-width: 768px) {
+    .wrapper {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .image-container img {
+        display: none;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    .social-links {
+        gap: 15px;
+    }
+
+    .social-links a {
+        padding: 12px;
+        font-size: 24px;
+    }
+}

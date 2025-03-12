@@ -1,0 +1,10 @@
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee" version="5.0">
+    <servlet>
+        <servlet-name>MedicoServlet</servlet-name>
+        <servlet-class>com.hospital.MedicoServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>MedicoServlet</servlet-name>
+        <url-pattern>/medico</url-pattern>
+    </servlet-mapping>
+</web-app>

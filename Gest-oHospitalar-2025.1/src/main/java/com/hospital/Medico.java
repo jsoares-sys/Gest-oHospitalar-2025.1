@@ -3,7 +3,7 @@ package com.hospital;
 import java.time.LocalDate;
 
 public class Medico {
-    private String nome;
+    private final String nome;
     private long cpf;
     private String email;
     private long telefone;
@@ -15,6 +15,7 @@ public class Medico {
     private String especialidade;
     private long crm;
 
+    // Construtor para inicializar todos os campos
     public Medico(String nome, long cpf, String email, long telefone, String endereco, long rg, 
                   LocalDate dataNascimento, char sexo, String estadoCivil, String especialidade, long crm) {
         this.nome = nome;
@@ -30,6 +31,7 @@ public class Medico {
         this.crm = crm;
     }
 
+    // Getters
     public String getNome() { return nome; }
     public long getCpf() { return cpf; }
     public String getEmail() { return email; }
